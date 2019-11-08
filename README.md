@@ -4,13 +4,13 @@
 |------|----|-------|
 |ID|integer|null: false|
 |body|text|null: false|
-|image|string|null: false|
+|image||null: false|
 |group_id|integer|null: false, foreign_key: true|
 |user_id|integer|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :user
-- has_many :group
+- belongs_to :group
 
 ## userテーブル
 
@@ -19,6 +19,7 @@
 |ID|integer|null: false|
 |name|string|null: false|
 |e-mail|string|null: false|
+|Password|integer|null: false|
 |group_id|integer|null: false, foreign_key: true|
 ### Association
 - belongs_to :groups_users
@@ -30,10 +31,11 @@
 |------|----|-------|
 |ID|integer|null: false|
 |user_id|integer|null: false, foreign_key: true|
-|message_id|string|null: false, foreign_key: true|
+|message_id|integer|null: false, foreign_key: true|
 
 ### Association
-- belongs_to :group,:user
+- belongs_to :groups_users
+- has_many :user
 
 ## groups_usersテーブル
 
