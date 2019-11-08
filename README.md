@@ -4,7 +4,7 @@
 |------|----|-------|
 |ID|integer|null: false|
 |body|text|null: false|
-|image||null: false|
+|image|string|null: false|
 |group_id|integer|null: false, foreign_key: true|
 |user_id|integer|null: false, foreign_key: true|
 
