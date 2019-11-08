@@ -2,7 +2,6 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|ID|integer|null: false|
 |body|text|null: false|
 |image|string||
 |group_id|integer|null: false, foreign_key: true|
@@ -16,7 +15,6 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|ID|integer|null: false|
 |name|string|null: false|
 |e-mail|string|null: false, add_index unique: true|
 |Password|integer|null: false|
@@ -30,7 +28,6 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|ID|integer|null: false|
 |user_id|integer|null: false, foreign_key: true|
 |message_id|integer|foreign_key: true|
 
@@ -43,7 +40,6 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|ID|integer|null: false|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 
