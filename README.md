@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## messageテーブル
 
 |Column|Type|Options|
@@ -35,7 +36,29 @@
 |------|----|-------|
 |user_id|integer|foreign_key: true|
 |group_id|integer|foreign_key: true|
+=======
+# README
 
-### Association
-- belongs_to :group
-- belongs_to :user
+This README would normally document whatever steps are necessary to get the
+application up and running.
+>>>>>>> parent of 62952e1... Update README.md
+
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
