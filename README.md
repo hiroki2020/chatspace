@@ -17,9 +17,9 @@
 |Column|Type|Options|
 |------|----|-------|
 |ID|integer|null: false|
-|group_id|integer|null: false, foreign_key: true|
 |name|string|null: false|
 |e-mail|string|null: false|
+|group_id|integer|null: false, foreign_key: true|
 ### Association
 - belongs_to :groups_users
 - has_many :message
