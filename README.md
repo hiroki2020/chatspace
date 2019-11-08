@@ -18,7 +18,7 @@
 |------|----|-------|
 |ID|integer|null: false|
 |name|string|null: false|
-|e-mail|string|null: false|
+|e-mail|string|null: false, add_index unique: true|
 |Password|integer|null: false|
 |group_id|integer|null: false, foreign_key: true|
 ### Association
