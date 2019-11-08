@@ -2,9 +2,9 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|ID|integer|null: false, foreign_key: true|
-|body|text|null: false, foreign_key: true|
-|image|string|null: false, foreign_key: true|
+|ID|integer|null: false|
+|body|text|null: false|
+|image|string|null: false|
 |group_id|integer|null: false, foreign_key: true|
 |user_id|integer|null: false, foreign_key: true|
 
@@ -16,10 +16,10 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|ID|integer|null: false, foreign_key: true|
+|ID|integer|null: false|
 |group_id|integer|null: false, foreign_key: true|
-|name|string|null: false, foreign_key: true|
-|e-mail|string|null: false, foreign_key: true|
+|name|string|null: false|
+|e-mail|string|null: false|
 ### Association
 - belongs_to :groups_users
 - has_many :message
@@ -28,7 +28,7 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|ID|integer|null: false, foreign_key: true|
+|ID|integer|null: false|
 |user_id|integer|null: false, foreign_key: true|
 |message_id|string|null: false, foreign_key: true|
 
@@ -39,7 +39,7 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|ID|integer|null: false, foreign_key: true|
+|ID|integer|null: false|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 
