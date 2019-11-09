@@ -20,6 +20,7 @@
 |Password|integer|null: false|
 ### Association
 - has_many groups,through :groups_users
+- has_many :message
 
 ## groupテーブル
 
@@ -29,6 +30,7 @@
 
 ### Association
 - has_many :users,through: :groups_users
+- has_many :message
 ## groups_usersテーブル
 
 |Column|Type|Options|
