@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ## messageテーブル
 
 |Column|Type|Options|
@@ -36,12 +35,6 @@
 |------|----|-------|
 |user_id|integer|foreign_key: true|
 |group_id|integer|foreign_key: true|
-=======
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
->>>>>>> parent of 62952e1... Update README.md
 
 Things you may want to cover:
 
