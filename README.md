@@ -28,12 +28,15 @@
 
 ### Association
 - has_many :users,through: :groups_users
+
+>>>>>>> 37870e53734509f8a6b39b43d666967d21427103
 ## groups_usersテーブル
 
 |Column|Type|Options|
 |------|----|-------|
 |user_id|integer|foreign_key: true|
 |group_id|integer|foreign_key: true|
+
 
 Things you may want to cover:
 
@@ -54,3 +57,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+### Association
+- belongs_to :group
+- belongs_to :user
+>>>>>>> 37870e53734509f8a6b39b43d666967d21427103
