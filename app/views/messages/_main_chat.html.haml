@@ -1,0 +1,21 @@
+.chat-main
+  .main-header
+    .main-header__left-box
+      %h2.main-header__left-box__current-group first
+      %ul.main-header__left-box__member-list Member: 
+    = link_to "#" do
+      .main-header__edit-btn Edit
+  .messages
+    .message
+      .message__upper-info
+        %p.message__upper-info__talker hirokiki
+        %p.message__upper-info__date 2019/11/12(TUE)09:19:40  
+      %P.message__text This is a first message.
+  .form 
+    %form.new_message
+      .input-box
+        %input.input-box__text{:placeholder => "type a message", :type => "text"}/
+        %label.input-box__image
+          %i.fa.fa-image
+          %input.input-box__image__file{:type => "file"}/
+      %input.submit-btn{:type => "submit",:value => "Send"} 
