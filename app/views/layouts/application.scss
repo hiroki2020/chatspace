@@ -1,8 +1,6 @@
 @import "font-awesome-sprockets";
 @import "./font-awesome";
-@import "layouts/user";
-@import "layouts/chat-main";
-@import "layouts/chat-side";
+@import "user";
 body {
   $contents-color: white;
   $main-length: 100px;
