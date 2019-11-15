@@ -11,6 +11,7 @@
         %p.message__upper-info__talker hirokiki
         %p.message__upper-info__date 2019/11/12(TUE)09:19:40  
       %P.message__text This is a first message.
+  
   .form 
     %form.new_message
       .input-box
@@ -18,4 +19,13 @@
         %label.input-box__image
           %i.far.fa-image
           %input.input-box__image__file{type: "file"}/
-      %input.submit-btn{type: "submit",value: "Send"} 
+      %input.submit-btn{type: "submit",value: "Send"}  
+
+  .form
+    = form_for [@group, @message] do |f|
+      = f.text_field :content, class: 'input-box__text', placeholder: 'type a message'
+      .input-box__image
+        = f.label :image, class: 'form__mask__image' do
+          = icon('fas', 'image', class: 'icon')
+          = f.file_field :image, class: 'input-box__image__file'
+      = f.submit 'Send', class: 'submit-btn'
