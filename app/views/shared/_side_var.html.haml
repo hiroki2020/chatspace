@@ -9,11 +9,11 @@
           %i.far.fa-edit 
         %li.list
         = link_to edit_user_path(current_user) do
-          %i.fas.fa-cog
+          %i.fas.fa-cog 
   .groups
     - current_user.groups.each do |group|
       .group
-        = link_to '#' do 
+        = link_to group_messages_path(group) do 
           .group__name
             = group.name 
           .group__message 
