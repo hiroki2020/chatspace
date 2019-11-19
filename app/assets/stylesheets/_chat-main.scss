@@ -45,12 +45,13 @@
     background-color: #fafafa;
     height: calc(100vh - 190px);
     padding: 46px $sub-length;
+    overflow: scroll;
     .message {
       padding-bottom: $sub-length;
-      &__upper-info {
+      &__upper-message {
         display: flex;
         margin-bottom: 10px;
-        &__talker {
+        &__user-name {
           font-size: 16px;
           font-weight: bold;
           color:  #434A54;
@@ -76,42 +77,47 @@
     padding: 20px $sub-length;
     height: 90px;
     background-color: #ddd;
-    .new_message {
-      display: flex;
-      .input-box {
+      .new_message {
         display: flex;
-        width: 100%;
         position: relative;
-        &__text {
-          height: 50px;
-          width: 100%;
-          padding: 0 $sub-length 0 10px;
-          color: #434a54;
-          border-style: none;
-          @include font;
-          position: relative;
-        }
-        label{
-          font-size: 1.3rem;
+        .form__mask {
           position: absolute;
           top: 10px;
-          right: 130px;
-          .fa {
-            display: inline-block;
-            font: normal normal normal 14px/1 FontAwesome; 
-            font-size: inherit;
-            text-rendering: auto;
-            -webkitーfontーsmoothing: 
-              antialized;
-          }
-          .fa-image {
-            content: "\f03e";
-          }
+          right: 120px;
         }
-        &__image__file {
-          display: none;
-        }
-      }
+        .input-box {
+          display: flex;
+          width: 100%;
+          position: relative;
+          &__text {
+            height: 50px;
+            width: 100%;
+            padding: 0 $sub-length 0 10px;
+            color: #434a54;
+            border-style: none;
+            @include font;
+          }
+          label{
+            font-size: 1.3rem;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            .fa {
+              display: inline-block;
+              font: normal normal normal 14px/1 FontAwesome; 
+              font-size: inherit;
+              text-rendering: auto;
+              -webkitーfontーsmoothing: 
+                antialized;
+            }
+            .fa-image {
+              content: "\f03e";
+            }
+          }
+          &__image__file {
+            display: none;
+          }
+        }     
       .submit-btn {
         width: $main-length;
         height: 50px;
