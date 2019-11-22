@@ -44,6 +44,8 @@ li {
     line-height: 50px;
     font-weight: bold;
     text-align: right;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
   &__input {
     float: left;
@@ -51,6 +53,7 @@ li {
     line-height: 30px;
     padding: 10px 15px;
     box-sizing: border-box;
+    margin-bottom: 30px;
   }
   &__action-btn {
     display: inline-block;

@@ -3,8 +3,15 @@
 @import "user";
 @import "config/colors";
 @import "modules/flash";
-@import "modules/group";
+@import "modules/group";  
+* {
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
 body {
+  height: 100%;
   $contents-color: white;
   $main-length: 100px;
   $sub-length: 40px;
@@ -13,11 +20,9 @@ body {
     font-size: inherit;
     font-weight: inherit;
   }
-  * {
-    box-sizing: border-box;
-  }
   margin: 0;
   .wrapper {
+    height: 100%;
     display: flex;
     @import "chat-side";
     
