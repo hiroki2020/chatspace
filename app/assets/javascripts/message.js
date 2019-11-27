@@ -71,6 +71,7 @@ $(function(){
     })
     .fail(function(data) {
         alert("メッセージ送信に失敗しました");
+        $('.submit-btn').prop('disabled', false);
     })
   })
   
