@@ -14,6 +14,7 @@ $(function(){
                 <p class="chat-group-user__name">ユーザーが見つかりません</p>
                </div>`;
     $("#user-search-result").append(html);
+    $("#user-serch-result").empty();
   }
   function addDeleteUser(name, id) {
     let html = `
@@ -36,7 +37,7 @@ $(function(){
       dataType: "json"
     })
       .done(function(users){
-        $("#user-serch-result").empty();//emptyメソッドで一度検索結果を空にする
+        $("#user-serch-result").empty();
         if (users.length !== 0) {
           users.forEach(function(user) {
             addUser(user);
