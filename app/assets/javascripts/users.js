@@ -12,9 +12,8 @@ $(function(){
     var html = `
                <div class="chat-group-user clearfix">
                 <p class="chat-group-user__name">ユーザーが見つかりません</p>
-               </div>`;
+               </div>`
     $("#user-search-result").append(html);
-    $("#user-serch-result").empty();
   }
   function addDeleteUser(name, id) {
     let html = `
