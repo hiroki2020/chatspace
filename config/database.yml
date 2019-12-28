@@ -48,8 +48,13 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
+
+
   <<: *default
-  database: chat-space_production
-  username: root
-  password: <%= ENV['DATABASE_PASSWORD'] %>
-  socket: /var/lib/mysql/mysql.sock
+  adapter: postgresql
+  encording: unicode
+  pool: 5
+  # database: chat-space_production
+  # username: root
+  # password: <%= ENV['DATABASE_PASSWORD'] %>
+  # socket: /var/lib/mysql/mysql.sock
